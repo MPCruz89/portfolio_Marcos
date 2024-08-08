@@ -25,3 +25,12 @@ ul {
 a {
   text-decoration: none;
 }
+
+.subtitulo {
+  font-family: "Fugaz One", Arial, Helvetica, sans-serif;
+  font-size: 8.75rem;
+  line-height: 1.1;
+  text-transform: uppercase;
+  word-break: break-all;
+  width: 4.5ch;
+}

@@ -1,0 +1,148 @@
+.formacao {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  padding: 40px 20px;
+  grid-template-columns: 1fr 2fr;
+  gap: 100px;
+  align-items: center;
+}
+
+.bg-formacao {
+  background: #141414;
+}
+
+.formacao .subtitulo {
+  color: #000;
+}
+
+.formacao-texto {
+  color: #a3a3a3;
+  font-size: 1.5rem;
+  line-height: 1.33;
+  margin-bottom: 40px;
+  max-width: 40ch;
+}
+
+.formacao-texto strong {
+  color: #fff;
+}
+
+.faculdade-lista {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 60px;
+  flex-wrap: wrap;
+}
+
+.faculdade {
+  display: flex;
+  background: #090909;
+  padding: 20px;
+  border-radius: 4px;
+  border: 1px solid #000;
+  flex: 1;
+  flex-direction: column;
+  max-width: 210px;
+}
+
+.faculdade-tipo {
+  color: #a3a3a3;
+  text-transform: uppercase;
+  font-size: 1rem;
+  line-height: 1.25;
+  margin-bottom: 10px;
+}
+
+.faculdade-curso {
+  flex: 1;
+  color: #fff;
+  font-size: 1.25rem;
+  line-height: 1.25;
+  margin-bottom: 40px;
+  /* word-break: break-all; */
+}
+
+.faculdade-instituicao {
+  color: #a3a3a3;
+  text-transform: uppercase;
+  font-size: 1.125rem;
+  line-height: 1.25;
+  word-break: break-all;
+}
+
+.cursos h3 {
+  text-transform: uppercase;
+  color: #8f8f8f;
+  font-size: 0.875rem;
+  margin-bottom: 30px;
+}
+
+.cursos li {
+  display: flex;
+  color: #fff;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 1000px) {
+  .formacao {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .faculdade {
+    max-width: 100%;
+  }
+
+  .formacao-texto {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    max-width: none;
+  }
+
+  .subtitulo {
+    font-size: 5rem;
+    word-break: normal;
+  }
+
+  .faculdade-instituicao {
+    word-break: normal;
+  }
+}
+
+@media (max-width: 800px) {
+  .subtitulo {
+    font-size: 3rem;
+  }
+
+  .faculdade-lista {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 500px) {
+  .faculdade-curso {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+
+  .faculdade-instituicao {
+    font-size: 1rem;
+  }
+
+  .faculdade-lista {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .cursos li {
+    font-size: 0.875rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .formacao-texto {
+    font-size: 1rem;
+  }
+}
