@@ -1,0 +1,26 @@
+.contato {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  padding: 40px 20px;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px 100px;
+  align-items: center;
+}
+
+.bg-contato {
+  background: #000;
+}
+
+.contato-texto {
+  color: #ccc;
+  font-size: 1.5rem;
+  line-height: 1.33;
+  max-width: 35ch;
+}
+
+.contato-links {
+  grid-column: 1;
+  display: flex;
+  gap: 20px;
+}

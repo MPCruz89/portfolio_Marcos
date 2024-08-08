@@ -85,20 +85,38 @@
   }
 }
 
-@media (max-width: 400px) {
-  .introducao {
-    grid-template-columns: 1fr;
-  }
-  .introducao .intro-perfil {
-    display: none;
+@media (max-width: 500px) {
+  .introducao h1 {
+    font-size: 1.5rem;
   }
 
   .intro-tecnologias {
     gap: 10px;
   }
+}
 
+@media (max-width: 400px) {
   .intro-tecnologias img {
     width: 25px;
     align-items: center;
+  }
+}
+
+@media (max-width: 370px) {
+  .introducao h1 {
+    font-size: 1.8rem;
+  }
+
+  .intro-tecnologias img {
+    width: 30px;
+    align-items: center;
+  }
+
+  .introducao {
+    grid-template-columns: 1fr;
+  }
+
+  .intro-perfil {
+    display: none;
   }
 }

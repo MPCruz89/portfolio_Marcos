@@ -71,7 +71,8 @@
   word-break: break-all;
 }
 
-.cursos h3 {
+.cursos h3,
+.idiomas h3 {
   text-transform: uppercase;
   color: #8f8f8f;
   font-size: 0.875rem;
@@ -83,6 +84,22 @@
   color: #fff;
   justify-content: space-between;
   margin-bottom: 20px;
+}
+
+.idiomas li {
+  display: flex;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.cursos span,
+.idiomas span {
+  color: #8f8f8f;
+}
+
+hr {
+  margin-bottom: 20px;
+  border-color: #141414;
 }
 
 @media (max-width: 1000px) {
@@ -139,10 +156,19 @@
   .cursos li {
     font-size: 0.875rem;
   }
+
+  .cursos h3,
+  .idiomas h3 {
+    margin-bottom: 20px;
+  }
 }
 
 @media (max-width: 400px) {
   .formacao-texto {
     font-size: 1rem;
+  }
+
+  .cursos li {
+    gap: 0px 20px;
   }
 }
