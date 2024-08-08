@@ -17,10 +17,66 @@
   font-size: 1.5rem;
   line-height: 1.33;
   max-width: 35ch;
+  margin-bottom: 20px;
 }
 
 .contato-links {
-  grid-column: 1;
   display: flex;
   gap: 20px;
+}
+
+.copyright {
+  color: #8f8f8f;
+  margin-top: 120px;
+}
+
+.redes-sociais {
+  position: absolute;
+  position: relative;
+}
+
+.redes-sociais p {
+  color: #fff;
+  font-size: 2rem;
+  line-height: 1.33;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 1000px) {
+  .redes-sociais p {
+    font-size: 1.5rem;
+  }
+
+  .copyright {
+    grid-column: 1 / -1;
+    margin-top: 80px;
+  }
+}
+
+@media (max-width: 600px) {
+  .contato p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .contato {
+    grid-template-columns: 1fr;
+  }
+
+  .copyright {
+    margin-top: 50px;
+  }
+
+  .contato-texto {
+    margin-bottom: 10px;
+  }
+
+  .redes-sociais p {
+    margin-bottom: 10px;
+  }
+
+  .contato-info {
+    margin-bottom: 20px;
+  }
 }
